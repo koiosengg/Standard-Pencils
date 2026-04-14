@@ -6,10 +6,10 @@ import Image4 from "../../assets/Home/Choose/Image 4.png";
 
 function Choose() {
   return (
-    <section className="template ">
+    <section className="template home-choose">
       <div className="template-heading">
         <h2>
-          Why Leading S <br />
+          Why Leading <br />
           <span> Beauty Brands Choose Us</span> <br />
         </h2>
         <p>
@@ -17,7 +17,7 @@ function Choose() {
           vulputate. dolor sit amet consectetur
         </p>
       </div>
-      <div className="home-choose">
+      <div className="home-choose-container">
         <article className="home-choose-set">
           <div className="home-choose-img">
             <img src={Image1} alt="Image 1" />

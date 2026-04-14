@@ -25,7 +25,11 @@ html {
   border-radius: 100px;
   border: 1px solid var(--color-black-Primary, #111);
   text-decoration: none;
-  transition: all 0.3;
+  transition: all 0.3s;
+}
+
+.primary-button:hover {
+  border: 1px solid var(--color-White-white, #f05f30);
 }
 
 .primary-button p {
@@ -35,7 +39,11 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transition: all 0.3;
+  transition: all 0.3s;
+}
+
+.primary-button:hover p {
+  color: #f05f30;
 }
 
 .primary-button svg {
@@ -44,7 +52,11 @@ html {
 }
 
 .primary-button svg path {
-  transition: all 0.3s;
+  transition: all 0.1s;
+}
+
+.primary-button:hover svg path {
+  fill: #f05f30;
 }
 
 .secondary-button {
@@ -57,6 +69,10 @@ html {
   background: var(--color-black-Primary, #111);
   text-decoration: none;
   transition: all 0.3;
+}
+
+.secondary-button:hover {
+  background: #f05f30;
 }
 
 .secondary-button p {
@@ -306,7 +322,6 @@ html {
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
-  background: var(--color-grey-50, #f2f2f2);
 }
 
 .template-heading {
@@ -330,12 +345,6 @@ html {
 
 .template-heading h2 span {
   color: var(--color-black-Primary, #111);
-  font-family: var(--font-family-title, "IBM Plex Sans");
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -1.44px;
 }
 
 .template-heading p {
@@ -350,6 +359,10 @@ html {
 }
 
 .home-choose {
+  background: var(--color-grey-50, #f2f2f2);
+}
+
+.home-choose-container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -412,22 +425,335 @@ html {
   line-height: normal;
 }
 
-.home-choose .home-choose-set:nth-child(1) {
+.home-choose-container .home-choose-set:nth-child(1) {
   grid-row: span 2;
 }
 
-.home-choose .home-choose-set:nth-child(2) {
+.home-choose-container .home-choose-set:nth-child(2) {
   display: flex;
 }
 
-.home-choose .home-choose-set:nth-child(3) {
+.home-choose-container .home-choose-set:nth-child(3) {
   flex-direction: column-reverse;
 }
 
-.home-choose .home-choose-set:nth-child(4) {
+.home-choose-container .home-choose-set:nth-child(4) {
   grid-column: span 2;
   flex-direction: row;
   align-items: flex-end;
+}
+
+.home-para {
+  width: 100%;
+  display: flex;
+  padding: 48px 160px 80px 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.home-para-container {
+  display: flex;
+  width: 100%;
+  max-width: 685px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  padding-top: 64px;
+  border-top: 1px solid #d6d6d6;
+}
+
+.home-para-container h2 {
+  color: var(--color-grey-Primary, #6e6e6e);
+  font-family: var(--font-family-title, "IBM Plex Sans");
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+
+.home-para-container h2 span {
+  color: var(--color-black-Primary, #111);
+}
+
+.home-para-container p {
+  padding: 8px 0px 8px 16px;
+  border-left: 2px solid #b5b5b5;
+  color: var(--color-black-300, #4b4b4b);
+  font-family: var(--font-family-body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-about-left {
+  display: flex;
+  width: 100%;
+  padding: 64px 24px 64px 160px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: var(--color-Orange-Primary, #f05f30);
+}
+
+.home-about-set {
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  color: var(--color-black-50, #e7e7e7);
+  font-family: var(--font-family-body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-about-set span {
+  color: var(--color-White-white, #fff);
+  font-family: var(--font-family-title, "IBM Plex Sans");
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.44px;
+}
+
+.home-about-right {
+  width: 100%;
+  display: flex;
+  padding: 64px 160px 32px 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  background: var(--color-black-Primary, #111);
+}
+
+.home-about-para {
+  color: var(--color-black-50, #e7e7e7);
+  font-family: var(--font-family-body, Inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-about-right a {
+  display: flex;
+  height: 48px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid var(--color-White-white, #fff);
+  color: var(--color-White-white, #fff);
+  font-family: var(--font-family-body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.home-about-right a:hover {
+  color: #f05f30;
+  border: 1px solid var(--color-White-white, #f05f30);
+}
+
+.home-about-right a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.home-about-right a svg path {
+  transition: all 0.3s;
+}
+
+.home-about-right a:hover svg path {
+  fill: #f05f30;
+}
+
+.home-categories {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.home-categories-set {
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-grey-100, #d6d6d6);
+  background: var(--color-White-white, #fff);
+}
+
+.home-categories-set-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 328/271;
+}
+
+.home-categories-set-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: rgba(202, 202, 202, 0.2);
+  transition: all 0.3s;
+}
+
+.home-categories-set:hover img {
+  scale: 1.1;
+}
+
+.home-categories-set-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.home-categories-set-text h3 {
+  color: var(--color-black-Primary, #111);
+  font-family: var(--font-family-body, Inter);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.home-categories-set-text p {
+  color: var(--color-black-300, #4b4b4b);
+  font-family: var(--font-family-body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-categories-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 3;
+  padding-top: 40px;
+}
+
+.home-categories-button .primary-button {
+  width: auto;
+}
+
+.home-capabilities {
+  width: 100%;
+  display: flex;
+  padding: 81px 160px;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(283deg, #5f0b87 -23.76%, #f9602f 99.95%),
+    var(--color-White-white, #fff);
+}
+
+.home-capabilities-container {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.home-capabilities-container-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.home-capabilities-container-text h2 {
+  color: var(--color-White-white, #fff);
+  text-align: center;
+  font-family: "ibm plex sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.44px;
+}
+
+.home-capabilities-container-text p {
+  color: var(--color-grey-200, #c2c2c2);
+  text-align: center;
+  font-family: var(--font-family-body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-capabilities-container a {
+  display: flex;
+  width: 201px;
+  height: 48px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: #fff;
+  transition: all 0.3s;
+  color: var(--color-black-Primary, #111);
+  font-family: var(--font-family-body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.home-capabilities-container a:hover {
+  background: #111;
+  color: #fff;
+}
+
+.home-capabilities-container a svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.home-capabilities-container a svg path {
+  transition: all 0.3s;
+}
+
+.home-capabilities-container a:hover svg path {
+  fill: #fff;
 }
 
 /* Footer */

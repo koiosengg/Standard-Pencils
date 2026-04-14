@@ -14,7 +14,7 @@ function Navbar() {
         <Link className="navbar-nav-link">Products</Link>
         <Link className="navbar-nav-link">Quality</Link>
         <Link className="navbar-nav-link">Who we work with</Link>
-        <Link className="primary-button">
+        <Link to="/" className="primary-button">
           <p>Talk to us</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
