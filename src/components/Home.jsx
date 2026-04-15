@@ -6,6 +6,12 @@ import Para from "./Home/Para";
 import About from "./Home/About";
 import Categories from "./Home/Categories";
 import Capabilities from "./Home/Capabilities";
+import Packaging from "./Home/Packaging";
+import FDA from "./Home/FDA";
+import Manufacturing from "./Home/Manufacturing";
+import Snapshots from "./Home/Snapshots";
+import Testimony from "./Home/Testimony";
+import Partner from "./Home/Partner";
 
 function Home() {
   return (
@@ -17,6 +23,12 @@ function Home() {
       <About />
       <Categories />
       <Capabilities />
+      <Packaging />
+      <FDA />
+      <Manufacturing />
+      <Snapshots />
+      <Testimony />
+      <Partner />
     </>
   );
 }
