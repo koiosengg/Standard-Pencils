@@ -74,7 +74,24 @@ function Footer() {
           </a>
         </div>
         <p>
-          Crafted by{" "}
+          made with{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="37"
+            viewBox="0 0 42 37"
+            fill="none"
+          >
+            <path
+              d="M12 1C5.925 1 1 5.925 1 12C1 23 14 33 21 35.326C28 33 41 23 41 12C41 5.925 36.075 1 30 1C26.28 1 22.99 2.847 21 5.674C19.9855 4.22939 18.6379 3.05041 17.0714 2.23683C15.5048 1.42325 13.7653 0.999004 12 1Z"
+              fill="#C3262B"
+              stroke="#C3262B"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>{" "}
+          by{" "}
           <a href="https://www.koiostudio.com/" target="_blank">
             Koiostudio
           </a>
