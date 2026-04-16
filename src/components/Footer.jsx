@@ -38,9 +38,9 @@ function Footer() {
               <path
                 d="M17 14H14V22H10V14H7V10H10V7C10 5.67392 10.5268 4.40215 11.4645 3.46447C12.4021 2.52678 13.6739 2 15 2H18V6H15C14.3333 6 14 6.33333 14 7V10H18L17 14Z"
                 stroke="#F05F30"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </a>
@@ -86,9 +86,9 @@ function Footer() {
               d="M12 1C5.925 1 1 5.925 1 12C1 23 14 33 21 35.326C28 33 41 23 41 12C41 5.925 36.075 1 30 1C26.28 1 22.99 2.847 21 5.674C19.9855 4.22939 18.6379 3.05041 17.0714 2.23683C15.5048 1.42325 13.7653 0.999004 12 1Z"
               fill="#C3262B"
               stroke="#C3262B"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>{" "}
           by{" "}

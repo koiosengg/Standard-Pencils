@@ -12,6 +12,7 @@ import Manufacturing from "./Home/Manufacturing";
 import Snapshots from "./Home/Snapshots";
 import Testimony from "./Home/Testimony";
 import Partner from "./Home/Partner";
+import Gallery from "./Home/Gallery";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <About />
       <Categories />
       <Capabilities />
+      <Gallery />
       <Packaging />
       <FDA />
       <Manufacturing />

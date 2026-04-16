@@ -17,7 +17,7 @@ function Snapshots() {
             vulputate. dolor sit amet consectetur
           </p>
         </div>
-        <div className="home-snapshots-left-container">
+        <div className="home-snapshots-left-container desktop">
           <article className="home-snapshots-left-set">
             <h3>Lorem Ipsum Dolor Sit</h3>
             <p>
@@ -36,38 +36,54 @@ function Snapshots() {
       </div>
       <div className="home-snapshots-right">
         <div className="home-snapshots-right-set">
-          <img src={Image1} alt="Snapshots Image" />
-          <Link className="secondary-button">
-            <p>Talk to us</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-            >
-              <mask
-                id="mask0_232_23"
-                style={{ maskType: "alpha" }}
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
+          <div className="home-snapshots-right-set-img">
+            <img src={Image1} alt="Snapshots Image" />
+            <Link className="secondary-button">
+              <p>Talk to us</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
+                viewBox="0 0 20 20"
+                fill="none"
               >
-                <rect width="20" height="20" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_232_23)">
-                <path
-                  d="M7.01659 16.6668L5.83325 15.4835L11.3166 10.0002L5.83325 4.51683L7.01659 3.3335L13.6833 10.0002L7.01659 16.6668Z"
-                  fill="white"
-                />
-              </g>
-            </svg>
-          </Link>
+                <mask
+                  id="mask0_232_23"
+                  style={{ maskType: "alpha" }}
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                >
+                  <rect width="20" height="20" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_232_23)">
+                  <path
+                    d="M7.01659 16.6668L5.83325 15.4835L11.3166 10.0002L5.83325 4.51683L7.01659 3.3335L13.6833 10.0002L7.01659 16.6668Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </Link>
+          </div>
+          <article className="home-snapshots-left-set">
+            <h3>Lorem Ipsum Dolor Sit</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin
+              vulputate. dolor sit amet consectetur
+            </p>
+          </article>
         </div>
         <div className="home-snapshots-right-set">
           <img src={Image2} alt="Snapshots Image" />
+          <article className="home-snapshots-left-set">
+            <h3>Lorem Ipsum Dolor Sit</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin
+              vulputate. dolor sit amet consectetur
+            </p>
+          </article>
         </div>
       </div>
     </section>

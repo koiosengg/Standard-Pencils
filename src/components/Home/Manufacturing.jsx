@@ -8,7 +8,7 @@ function Manufacturing() {
       <div className="home-manufacturing-text">
         <h2>
           Decades of Manufacturing Experience with
-          <br /> Indian and Global Beauty Brands
+          <br className="desktop" /> Indian and Global Beauty Brands
         </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
