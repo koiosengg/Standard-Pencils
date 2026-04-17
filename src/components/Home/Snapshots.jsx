@@ -67,7 +67,7 @@ function Snapshots() {
               </svg>
             </Link>
           </div>
-          <article className="home-snapshots-left-set">
+          <article className="home-snapshots-left-set mobile">
             <h3>Lorem Ipsum Dolor Sit</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin
@@ -77,7 +77,7 @@ function Snapshots() {
         </div>
         <div className="home-snapshots-right-set">
           <img src={Image2} alt="Snapshots Image" />
-          <article className="home-snapshots-left-set">
+          <article className="home-snapshots-left-set mobile">
             <h3>Lorem Ipsum Dolor Sit</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin

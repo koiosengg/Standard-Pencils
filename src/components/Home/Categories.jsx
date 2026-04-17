@@ -12,8 +12,9 @@ function Categories() {
     <section className="template">
       <div className="template-heading">
         <h2>
-          Why Leading <br />
-          <span> Beauty Brands Choose Us</span> <br />
+          Our Product
+          <br />
+          <span> Categories </span> <br />
         </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
