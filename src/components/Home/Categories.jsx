@@ -17,8 +17,8 @@ function Categories() {
           <span> Categories </span> <br />
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-          vulputate. dolor sit amet consectetur
+          Versatile eye, lip, and face formats developed for high performance, 
+          consistent quality, and seamless brand integration.
         </p>
       </div>
       <div className="home-categories">
@@ -29,8 +29,8 @@ function Categories() {
           <div className="home-categories-set-text">
             <h3>Classic Kohl/Kajal</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-              vulputate. dolor sit amet{" "}
+              Traditional soft kohl pencil with a smooth, blendable formula 
+              designed for rich colour<br/> payoff and effortless application.{" "}
             </p>
           </div>
         </article>
@@ -41,8 +41,8 @@ function Categories() {
           <div className="home-categories-set-text">
             <h3>Liquid Lipstick</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-              vulputate. dolor sit amet{" "}
+              High-performance liquid lipstick designed<br/> for long wear, 
+              rich pigment payoff, and<br/> smooth, even application.{" "}
             </p>
           </div>
         </article>
@@ -53,8 +53,8 @@ function Categories() {
           <div className="home-categories-set-text">
             <h3>Liquid Concealer</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-              vulputate. dolor sit amet{" "}
+              High-coverage liquid formula designed for<br/> smooth application 
+              and effective spot and <br/>under-eye correction.{" "}
             </p>
           </div>
         </article>
@@ -65,8 +65,7 @@ function Categories() {
           <div className="home-categories-set-text">
             <h3>Nail Whitener</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-              vulputate. dolor sit amet{" "}
+              Hard, precision core pencil designed to<br/> enhance, brighten, and define the natural<br/> nail tip.{" "}
             </p>
           </div>
         </article>
@@ -77,8 +76,7 @@ function Categories() {
           <div className="home-categories-set-text">
             <h3>Eyebrow Definer</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-              vulputate. dolor sit amet{" "}
+              Firm, matte formula for controlled<br/> application and natural-looking brow <br/>definition.{" "}
             </p>
           </div>
         </article>
@@ -89,8 +87,7 @@ function Categories() {
           <div className="home-categories-set-text">
             <h3>Root Touch Up Stick</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-              vulputate. dolor sit amet{" "}
+              Pigmented, easy-glide stick for quick,<br/> precise, and natural-looking grey root <br/>coverage.{" "}
             </p>
           </div>
         </article>

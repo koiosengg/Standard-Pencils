@@ -13,8 +13,8 @@ function Choose() {
           <span> Beauty Brands Choose Us</span> <br />
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-          vulputate. dolor sit amet consectetur
+         Built on decades of manufacturing experience, we deliver consistent quality,
+        process reliability, and scalable solutions trusted by leading cosmetic brands.
         </p>
       </div>
       <div className="home-choose-container">

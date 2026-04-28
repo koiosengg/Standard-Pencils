@@ -11,8 +11,8 @@ function FDA() {
           <span> Compliance Partner </span> <br />
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-          vulputate. dolor sit amet consectetur
+          From 'dermatologist-tested' to '24-hour wear', 'ophthalmologist approved' to 'hypoallergenic'.
+           If there's a claim your market wants, we have the science and the certification to make it real.
         </p>
       </div>
       <div className="home-fda-container">
@@ -34,66 +34,65 @@ function FDA() {
           <span>1</span>
           <h3>
             Dermatologist
-            <br /> Tested
+            <br /> Tested / Recommended
           </h3>
           <p>
-            Clinical patch-test protocols with certified dermatologists. Full
-            documentation package for brand marketing use.
+            Validated for skin compatibility,supporting safe use across sensitive 
+            skin and eye applications with clinically tested assurance.
           </p>
         </article>
         <article className="home-fda-set">
           <span>2</span>
           <h3>
-            Ophthalmologist
-            <br /> Approved
+            Lead-Free
+            <br /> Formulations
           </h3>
           <p>
-            Clinical patch-test protocols with certified dermatologists. Full
-            documentation package for brand marketing use.
+            Developed to address safety concerns around eye products, 
+            ensuring reduced risk of irritation and regulatory compliance.
           </p>
         </article>
         <article className="home-fda-set">
           <span>3</span>
           <h3>
-            Long-Wear &
-            <br /> Waterproof Claims
+            Paraben-Free
+            <br /> Systems
           </h3>
           <p>
-            Clinical patch-test protocols with certified dermatologists. Full
-            documentation package for brand marketing use.
+            Formulated to meet clean-label preferences and modern regulatory expectations.
           </p>
         </article>
         <article className="home-fda-set">
           <span>4</span>
           <h3>
-            Natural &
-            <br /> Organic Claims
+            Hypoallergenic
+            <br /> Development
           </h3>
           <p>
-            Clinical patch-test protocols with certified dermatologists. Full
-            documentation package for brand marketing use.
+            Designed to minimise the risk of allergic reactions,
+            suitable for sensitive users and broader acceptance.
           </p>
         </article>
         <article className="home-fda-set">
           <span>5</span>
           <h3>
-            Free-From
-            <br /> Formulations
+            Heavy Metal / Cadmium
+            <br /> Controlled
           </h3>
           <p>
-            Clinical patch-test protocols with certified dermatologists. Full
-            documentation package for brand marketing use.
+            Strict quality checks ensure formulations are free
+             from heavy metals and meet global safety standards.
           </p>
         </article>
         <article className="home-fda-set">
           <span>6</span>
           <h3>
-            CDSCO &
-            <br /> Regulatory Docs
+            FDA-Compliant
+            <br /> Manufacturing Facility
           </h3>
           <p>
-            Clinical patch-test protocols with certified dermatologists. Full
-            documentation package for brand marketing use.
+            Produced in an FDA and CDSCO-compliant facility,
+             ensuring adherence to manufacturing regulations.
           </p>
         </article>
       </div>

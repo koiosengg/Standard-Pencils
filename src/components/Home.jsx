@@ -13,11 +13,12 @@ import Snapshots from "./Home/Snapshots";
 import Testimony from "./Home/Testimony";
 import Partner from "./Home/Partner";
 import Gallery from "./Home/Gallery";
+import Questions from "./Capabilities/Questions";
 
 function Home() {
   return (
     <>
-      <Banner />
+      <Banner/>
       <Marquee />
       <Choose />
       <Para />
@@ -30,6 +31,7 @@ function Home() {
       <Manufacturing />
       <Snapshots />
       <Testimony />
+      <Questions />
       <Partner />
     </>
   );

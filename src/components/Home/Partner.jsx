@@ -20,8 +20,8 @@ function Partner() {
             Looking for a Reliable Cosmetic <br /> Manufacturing Partner?
           </h2>
           <p>
-            Explore the full range of what we develop, and find the approach
-            that <br className="desktop" /> fits your next product.
+            From formulation to final output, we ensure your products are developed<br className="desktop" />
+             with precision, consistency, and complete reliability. 
           </p>
         </div>
         <Link to="/">

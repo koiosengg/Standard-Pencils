@@ -66,9 +66,9 @@ function About() {
 
       <div className="home-about-right">
         <p className="home-about-para">
-          Standard Pencil is a Lorem ipsum dolor sit amet consectetur. Aliquam
-          diam felis elit malesuada fringilla. Dictum quis commodo cursus
-          volutpat diam mauris quam.{" "}
+          Trusted Across Industries. Proven at Scale.<br/>
+          With decades of experience and global brand<br/> partnerships, we support pharma, export markets, <br/>
+          MSMEs, and private label D2C brands with consistent, reliable manufacturing.{" "}
         </p>
 
         <Link to="/about">

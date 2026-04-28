@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "/Logo.jpg";
+import Logo from "/Logo.png";
 
 function Footer() {
   return (
@@ -9,12 +9,8 @@ function Footer() {
         <div className="footer-heading">
           <Link to="/" className="footer-heading-logo">
             <img src={Logo} alt="Standard Pencil Logo" />
-            <h2>
-              Standard
-              <br /> Pencils
-            </h2>
           </Link>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <p>Behind Every Beauty Brand,<br/>From Idea to Iconic.</p>
         </div>
         <nav className="footer-nav">
           <Link to="/">About</Link>

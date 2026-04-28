@@ -5,6 +5,10 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
+import CapabilitiesPage from "./components/CapabilitiesPage";
+import Product from "./components/Product";
+
 
 function App() {
   return (
@@ -16,6 +20,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
+          <Route path="about" element={<AboutUs />} />
+          <Route path="capabilities" element={<CapabilitiesPage />} />
+          <Route path="product" element={<Product />} />
         </Route>
       </Routes>
       <Footer />

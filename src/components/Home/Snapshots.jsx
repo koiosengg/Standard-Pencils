@@ -36,8 +36,12 @@ function Snapshots() {
       </div>
       <div className="home-snapshots-right">
         <div className="home-snapshots-right-set">
-          <div className="home-snapshots-right-set-img">
-            <img src={Image1} alt="Snapshots Image" />
+          <div className="home-snapshots-right-set-img image-zoom-frame">
+            <img
+              src={Image1}
+              alt="Snapshots Image"
+              className="image-zoom-target"
+            />
             <Link className="secondary-button">
               <p>Talk to us</p>
               <svg
@@ -76,7 +80,13 @@ function Snapshots() {
           </article>
         </div>
         <div className="home-snapshots-right-set">
-          <img src={Image2} alt="Snapshots Image" />
+          <div className="home-snapshots-right-set-img image-zoom-frame">
+            <img
+              src={Image2}
+              alt="Snapshots Image"
+              className="image-zoom-target"
+            />
+          </div>
           <article className="home-snapshots-left-set mobile">
             <h3>Lorem Ipsum Dolor Sit</h3>
             <p>

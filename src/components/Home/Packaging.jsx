@@ -18,8 +18,12 @@ function Packaging() {
       </div>
       <div className="home-packaging-container">
         <article className="home-packaging-set">
-          <div className="home-packaging-set-img">
-            <img src={Image1} alt="Packaging Image" />
+          <div className="home-packaging-set-img image-zoom-frame">
+            <img
+              src={Image1}
+              alt="Packaging Image"
+              className="image-zoom-target"
+            />
           </div>
           <div className="home-packaging-set-text">
             <div className="home-packaging-set-text-heading">

@@ -73,12 +73,48 @@ function Gallery() {
             <h3>OEM Manufacturing</h3>
           </div>
 
-          <img src={Image1} alt="Gallery" className="home-gallery-img" />
-          <img src={Image2} alt="Gallery" className="home-gallery-img" />
-          <img src={Image3} alt="Gallery" className="home-gallery-img" />
-          <img src={Image1} alt="Gallery" className="home-gallery-img" />
-          <img src={Image2} alt="Gallery" className="home-gallery-img" />
-          <img src={Image3} alt="Gallery" className="home-gallery-img" />
+          <div className="home-gallery-item image-zoom-frame">
+            <img
+              src={Image1}
+              alt="Gallery"
+              className="home-gallery-img image-zoom-target"
+            />
+          </div>
+          <div className="home-gallery-item image-zoom-frame">
+            <img
+              src={Image2}
+              alt="Gallery"
+              className="home-gallery-img image-zoom-target"
+            />
+          </div>
+          <div className="home-gallery-item image-zoom-frame">
+            <img
+              src={Image3}
+              alt="Gallery"
+              className="home-gallery-img image-zoom-target"
+            />
+          </div>
+          <div className="home-gallery-item image-zoom-frame">
+            <img
+              src={Image1}
+              alt="Gallery"
+              className="home-gallery-img image-zoom-target"
+            />
+          </div>
+          <div className="home-gallery-item image-zoom-frame">
+            <img
+              src={Image2}
+              alt="Gallery"
+              className="home-gallery-img image-zoom-target"
+            />
+          </div>
+          <div className="home-gallery-item image-zoom-frame">
+            <img
+              src={Image3}
+              alt="Gallery"
+              className="home-gallery-img image-zoom-target"
+            />
+          </div>
         </div>
 
         <div className="home-gallery-buttons desktop">

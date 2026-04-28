@@ -43,14 +43,13 @@ function Banner() {
               Expertise in Eye Care & Lip Care
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-              vulputate. dolor sit amet consectetur
+              FDA-approved facility with scalable production, multiple formats, and proven experience with leading cosmetic brands.Delivering manufacturing to your exact specifications.
             </p>
           </div>
 
           <div className="home-banner-buttons">
             <Link className="secondary-button">
-              <p>Let’s Start a Project</p>
+              <p>Get your Product Solution</p>
             </Link>
             <Link className="primary-button">
               <p>Our Capabilities</p>
