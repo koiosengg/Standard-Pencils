@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Image1 from "../../assets/Home/Banner/Image 1.png";
+import Image1 from "../../assets/Home/Banner/Image 1.jpg";
 import Image2 from "../../assets/Home/Banner/Image 2.png";
 import Image3 from "../../assets/Home/Banner/Image 3.png";
-import Image4 from "../../assets/Home/Banner/Image 4.png";
-import Image5 from "../../assets/Home/Banner/Image 5.png";
-import Image6 from "../../assets/Home/Banner/Image 6.png";
+import Image4 from "../../assets/Home/Banner/Image 4.jpg";
+import Image5 from "../../assets/Home/Banner/Image 5.jpg";
 
 function Banner() {
-  const images = [Image1, Image2, Image3, Image4, Image5, Image6];
+  const images = [Image1, Image2, Image3, Image4, Image5];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState(true);
 
@@ -39,7 +38,7 @@ function Banner() {
         <div className="banner-capabilities-content">
           <div className="banner-capabilities-text">
             <h1>
-              We'd Love to 
+              We'd Love to
               <span>Hear From You</span>
             </h1>
             <p>
@@ -47,8 +46,6 @@ function Banner() {
               vulputate. dolor sit amet consectetur
             </p>
           </div>
-
-          
         </div>
       </div>
     </section>
