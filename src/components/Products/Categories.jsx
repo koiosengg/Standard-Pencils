@@ -11,7 +11,8 @@ import Image8 from "../../assets/Products/Image8.png";
 
 
 
-const categoryPills = ["Eyes", "Lips", "Face", "Nails", "Hair"];
+const ALL_CATEGORY = "All";
+const categoryPills = [ALL_CATEGORY, "Eyes", "Lips", "Face", "Nails", "Hair"];
 
 const products = [
   {
@@ -100,7 +101,10 @@ function Categories() {
   const [activeCategory, setActiveCategory] = useState(categoryPills[0]);
 
   const filteredProducts = useMemo(
-    () => products.filter((product) => product.category === activeCategory),
+    () =>
+      activeCategory === ALL_CATEGORY
+        ? products
+        : products.filter((product) => product.category === activeCategory),
     [activeCategory]
   );
 

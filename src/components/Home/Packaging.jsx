@@ -12,8 +12,8 @@ function Packaging() {
           <span> Packaging Types </span> <br />
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-          vulputate. dolor sit amet consectetur
+          Built to support product safety, strong shelf presence, and seamless
+          branding across multiple formats and market requirements.
         </p>
       </div>
       <div className="home-packaging-container">

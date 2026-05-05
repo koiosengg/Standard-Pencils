@@ -7,6 +7,7 @@ import About from "./Home/About";
 import Categories from "./Home/Categories";
 import Capabilities from "./Home/Capabilities";
 import Packaging from "./Home/Packaging";
+import Success from "./Home/Success";
 import FDA from "./Home/FDA";
 import Manufacturing from "./Home/Manufacturing";
 import Snapshots from "./Home/Snapshots";
@@ -27,6 +28,7 @@ function Home() {
       <Capabilities />
       <Gallery />
       <Packaging />
+      <Success />
       <FDA />
       <Manufacturing />
       <Snapshots />

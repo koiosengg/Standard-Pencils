@@ -25,15 +25,15 @@ function Navbar() {
         <img src={Logo} alt="Standard Pencil Logo" />
       </Link>
       <nav className="navbar-nav desktop">
-        <Link to="/about" className="navbar-nav-link">About Us</Link>
+        <Link to="/about" className="navbar-nav-link">
+          About Us
+        </Link>
         <Link to="/capabilities" className="navbar-nav-link">
           Capabilities
         </Link>
         <Link to="/product" className="navbar-nav-link">
           Products
         </Link>
-        <Link className="navbar-nav-link">Quality</Link>
-        <Link className="navbar-nav-link">Who we work with</Link>
         <Link to="/contact" className="primary-button">
           <p>Talk to us</p>
           <svg
@@ -192,70 +192,6 @@ function Navbar() {
               onClick={handleLinkClick}
             >
               Products
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <mask
-                  id="mask0_247_158"
-                  style={{ maskType: "alpha" }}
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                >
-                  <rect width="20" height="20" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_247_158)">
-                  <path
-                    d="M7.01659 16.6667L5.83325 15.4833L11.3166 9.99999L5.83325 4.51666L7.01659 3.33333L13.6833 9.99999L7.01659 16.6667Z"
-                    fill="#B5B5B5"
-                  />
-                </g>
-              </svg>
-            </Link>
-            <Link
-              to="/"
-              className="mobile-navbar-nav-link"
-              onClick={handleLinkClick}
-            >
-              Quality
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <mask
-                  id="mask0_247_158"
-                  style={{ maskType: "alpha" }}
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                >
-                  <rect width="20" height="20" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_247_158)">
-                  <path
-                    d="M7.01659 16.6667L5.83325 15.4833L11.3166 9.99999L5.83325 4.51666L7.01659 3.33333L13.6833 9.99999L7.01659 16.6667Z"
-                    fill="#B5B5B5"
-                  />
-                </g>
-              </svg>
-            </Link>
-            <Link
-              to="/"
-              className="mobile-navbar-nav-link"
-              onClick={handleLinkClick}
-            >
-              Who we work with
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

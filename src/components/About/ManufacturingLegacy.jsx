@@ -1,6 +1,7 @@
+const logo = '/Logo2.png';
+
 function ManufacturingLegacy() {
   const mosaicTiles = Array.from({ length: 16 }, (_, index) => index + 1);
-
   return (
     <section className="about-manufacturing">
       <div className="about-manufacturing-content">
@@ -35,23 +36,28 @@ function ManufacturingLegacy() {
       </div>
 
       <div className="about-manufacturing-visual">
-        <div className="about-manufacturing-visual-head">
-          <h3>
-            Built for Brands,
-            <br />
-            Not Shelves
-          </h3>
-        </div>
+  <div className="about-manufacturing-visual-head">
+    <h3>
+      Built for Brands,
+      <br />
+      Not Shelves
+    </h3>
+    <img 
+      src={logo} 
+      alt="Manufacturing Legacy Visual" 
+      className="about-manufacturing-visual-head-logo"
+    />
+  </div>
 
-        <div className="about-manufacturing-mosaic" aria-hidden="true">
-          {mosaicTiles.map((tile) => (
-            <div
-              key={tile}
-              className={`about-manufacturing-tile about-manufacturing-tile-${tile}`}
-            />
-          ))}
-        </div>
-      </div>
+  <div className="about-manufacturing-mosaic" aria-hidden="true">
+    {mosaicTiles.map((tile) => (
+      <div
+        key={tile}
+        className={`about-manufacturing-tile about-manufacturing-tile-${tile}`}
+      />
+    ))}
+  </div>
+</div>
     </section>
   );
 }

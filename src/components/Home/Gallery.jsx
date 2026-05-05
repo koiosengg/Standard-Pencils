@@ -9,7 +9,6 @@ function Gallery() {
   const slideRef = useRef(null);
 
   const [step, setStep] = useState(0);
-  const [maxSteps, setMaxSteps] = useState(0);
   const [containerWidth, setContainerWidth] = useState(0);
   const [slideWidth, setSlideWidth] = useState(0);
 
@@ -24,9 +23,6 @@ function Gallery() {
 
         setContainerWidth(cWidth);
         setSlideWidth(sWidth);
-
-        const totalSteps = Math.ceil(sWidth / cWidth);
-        setMaxSteps(totalSteps);
       }
     };
 
@@ -73,48 +69,12 @@ function Gallery() {
             <h3>OEM Manufacturing</h3>
           </div>
 
-          <div className="home-gallery-item image-zoom-frame">
-            <img
-              src={Image1}
-              alt="Gallery"
-              className="home-gallery-img image-zoom-target"
-            />
-          </div>
-          <div className="home-gallery-item image-zoom-frame">
-            <img
-              src={Image2}
-              alt="Gallery"
-              className="home-gallery-img image-zoom-target"
-            />
-          </div>
-          <div className="home-gallery-item image-zoom-frame">
-            <img
-              src={Image3}
-              alt="Gallery"
-              className="home-gallery-img image-zoom-target"
-            />
-          </div>
-          <div className="home-gallery-item image-zoom-frame">
-            <img
-              src={Image1}
-              alt="Gallery"
-              className="home-gallery-img image-zoom-target"
-            />
-          </div>
-          <div className="home-gallery-item image-zoom-frame">
-            <img
-              src={Image2}
-              alt="Gallery"
-              className="home-gallery-img image-zoom-target"
-            />
-          </div>
-          <div className="home-gallery-item image-zoom-frame">
-            <img
-              src={Image3}
-              alt="Gallery"
-              className="home-gallery-img image-zoom-target"
-            />
-          </div>
+          <img src={Image1} alt="Gallery" className="home-gallery-img" />
+          <img src={Image2} alt="Gallery" className="home-gallery-img" />
+          <img src={Image3} alt="Gallery" className="home-gallery-img" />
+          <img src={Image1} alt="Gallery" className="home-gallery-img" />
+          <img src={Image2} alt="Gallery" className="home-gallery-img" />
+          <img src={Image3} alt="Gallery" className="home-gallery-img" />
         </div>
 
         <div className="home-gallery-buttons desktop">
