@@ -11,6 +11,19 @@ import Image8 from "../../assets/Home/Partner/Image 8.png";
 import Image9 from "../../assets/Home/Partner/Image 9.png";
 import Image10 from "../../assets/Home/Partner/Image 10.png";
 
+const partnerImages = [
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+  Image6,
+  Image7,
+  Image8,
+  Image9,
+  Image10,
+];
+
 function Partner() {
   return (
     <section className="home-capabilities home-partner">
@@ -54,46 +67,21 @@ function Partner() {
         </Link>
         <div className="home-partner-wrapper">
           <div className="home-partner-marquee">
-            <img src={Image1} alt="Product Image" />
-            <img src={Image2} alt="Product Image" />
-            <img src={Image3} alt="Product Image" />
-            <img src={Image4} alt="Product Image" />
-            <img src={Image5} alt="Product Image" />
-            <img src={Image6} alt="Product Image" />
-            <img src={Image7} alt="Product Image" />
-            <img src={Image8} alt="Product Image" />
-            <img src={Image9} alt="Product Image" />
-            <img src={Image10} alt="Product Image" />
-            <img src={Image1} alt="Product Image" />
-            <img src={Image2} alt="Product Image" />
-            <img src={Image3} alt="Product Image" />
-            <img src={Image4} alt="Product Image" />
-            <img src={Image5} alt="Product Image" />
-            <img src={Image6} alt="Product Image" />
-            <img src={Image7} alt="Product Image" />
-            <img src={Image8} alt="Product Image" />
-            <img src={Image9} alt="Product Image" />
-            <img src={Image10} alt="Product Image" />
-            <img src={Image1} alt="Product Image" />
-            <img src={Image2} alt="Product Image" />
-            <img src={Image3} alt="Product Image" />
-            <img src={Image4} alt="Product Image" />
-            <img src={Image5} alt="Product Image" />
-            <img src={Image6} alt="Product Image" />
-            <img src={Image7} alt="Product Image" />
-            <img src={Image8} alt="Product Image" />
-            <img src={Image9} alt="Product Image" />
-            <img src={Image10} alt="Product Image" />
-            <img src={Image1} alt="Product Image" />
-            <img src={Image2} alt="Product Image" />
-            <img src={Image3} alt="Product Image" />
-            <img src={Image4} alt="Product Image" />
-            <img src={Image5} alt="Product Image" />
-            <img src={Image6} alt="Product Image" />
-            <img src={Image7} alt="Product Image" />
-            <img src={Image8} alt="Product Image" />
-            <img src={Image9} alt="Product Image" />
-            <img src={Image10} alt="Product Image" />
+            {[0, 1].map((groupIndex) => (
+              <div
+                className="home-partner-marquee-group"
+                aria-hidden={groupIndex === 1}
+                key={groupIndex}
+              >
+                {partnerImages.map((image, imageIndex) => (
+                  <img
+                    src={image}
+                    alt={groupIndex === 0 ? "Product Image" : ""}
+                    key={`${groupIndex}-${imageIndex}`}
+                  />
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </div>

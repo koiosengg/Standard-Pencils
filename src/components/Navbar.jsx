@@ -91,7 +91,7 @@ function Navbar() {
         <div className="mobile-navbar-top">
           <div className="mobile-navbar-nav">
             <Link
-              to="/contact"
+              to="/"
               className="mobile-navbar-nav-link"
               onClick={handleLinkClick}
             >
@@ -155,7 +155,7 @@ function Navbar() {
               </svg>
             </Link>
             <Link
-              to="/"
+              to="/capabilities"
               className="mobile-navbar-nav-link"
               onClick={handleLinkClick}
             >
@@ -187,7 +187,7 @@ function Navbar() {
               </svg>
             </Link>
             <Link
-              to="/"
+              to="/product"
               className="mobile-navbar-nav-link"
               onClick={handleLinkClick}
             >
@@ -219,7 +219,7 @@ function Navbar() {
               </svg>
             </Link>
           </div>
-          <Link className="secondary-button" onClick={handleLinkClick}>
+          <Link to="/contact" className="secondary-button" onClick={handleLinkClick}>
             <p>Talk to Us</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

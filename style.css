@@ -1486,6 +1486,8 @@ html {
 
 .about-manufacturing-visual-head-logo {
   position: relative;
+  width: 44px;
+  height: 40px;
   top: -40px;
   left: 225px;
   aspect-ratio: 11/10;
@@ -1624,32 +1626,89 @@ html {
 
 @media (max-width: 560px) {
   .about-manufacturing {
-    gap: 20px;
-    padding: 52px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 28px 22px 52px;
+    border-bottom: 4px solid #f05f30;
+  }
+
+  .about-manufacturing-content {
+    display: contents;
+  }
+
+  .about-manufacturing-heading {
+    order: 1;
+    gap: 12px;
   }
 
   .about-manufacturing-heading h2 {
-    font-size: 42px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -0.72px;
   }
 
   .about-manufacturing-heading h2 span {
-    font-size: 42px;
+    font-size: 36px;
+    line-height: 1.18;
+    letter-spacing: -0.72px;
+  }
+
+  .about-manufacturing-intro {
+    max-width: 360px;
   }
 
   .about-manufacturing-intro,
   .about-manufacturing-copy p {
     font-size: 16px;
-    line-height: 1.45;
+    line-height: 1.18;
+  }
+
+  .about-manufacturing-copy {
+    order: 3;
+    max-width: 100%;
+    gap: 24px;
+  }
+
+  .about-manufacturing-visual {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    gap: 4px;
+    padding-top: 18px;
   }
 
   .about-manufacturing-visual-head {
-    flex-direction: column;
-    /* align-items: flex-start; */
-    gap: 10px;
+    min-height: 84px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0;
   }
 
   .about-manufacturing-visual-head h3 {
-    font-size: 28px;
+    font-size: 23px;
+    line-height: 1.08;
+  }
+
+  .about-manufacturing-visual-head-logo {
+    position: static;
+    width: 48px;
+    height: auto;
+    margin: -10px 2px 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .about-manufacturing-mosaic {
+    grid-template-rows: repeat(12, 27px);
+    gap: 4px;
+    min-height: 0;
+  }
+
+  .about-manufacturing-tile {
+    border-radius: 4px;
   }
 }
 
@@ -2835,7 +2894,7 @@ html {
   letter-spacing: -1.44px;
 }
 
-.home-success-heading h2 span {
+.home-success-heading h2 .home-success-heading-accent {
   color: var(--color-Orange-Primary, #f05f30);
   font-family: "IBM Plex Sans";
   font-size: 48px;
@@ -2843,6 +2902,10 @@ html {
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -1.44px;
+}
+
+.home-success-heading-line {
+  display: inline;
 }
 
 .home-success-description {
@@ -3015,6 +3078,30 @@ html {
     padding: 44px 24px 92px;
   }
 
+  .home-success-heading p,
+  .home-success-heading h2,
+  .home-success-heading h2 .home-success-heading-accent {
+    font-size: clamp(48px, 7.5vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .home-success-heading-line {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .home-success-description {
+    max-width: 640px;
+    margin-top: 30px;
+    font-size: clamp(24px, 3.6vw, 30px);
+    line-height: 1.18;
+  }
+
+  .home-success-description-break {
+    display: none;
+  }
+
   .home-success-stats {
     padding-left: 0;
   }
@@ -3038,6 +3125,25 @@ html {
 @media (max-width: 560px) {
   .home-success-image {
     min-height: 300px;
+  }
+
+  .home-success-copy {
+    padding: 44px 20px 92px;
+  }
+
+  .home-success-heading p,
+  .home-success-heading h2,
+  .home-success-heading h2 .home-success-heading-accent {
+    font-size: clamp(30px, 8vw, 42px);
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+  }
+
+  .home-success-description {
+    max-width: 100%;
+    margin-top: 34px;
+    font-size: clamp(18px, 4.8vw, 24px);
+    line-height: 1.18;
   }
 
   .home-success-stats {
@@ -3387,15 +3493,36 @@ html {
 .home-partner-marquee {
   display: flex;
   align-items: center;
-  width: max-content;
-  animation: marqueeScroll 30s linear infinite;
+  flex-wrap: nowrap;
+  width: fit-content;
+  animation: partnerMarqueeScroll 16s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.home-partner-marquee-group {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 4px;
 }
 
 .home-partner-marquee img {
+  display: block;
+  flex: 0 0 auto;
   height: 117px;
+  width: auto;
   object-fit: cover;
-  margin-left: 4px;
   border-radius: 8px;
+}
+
+@keyframes partnerMarqueeScroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 /* Footer */
@@ -3929,10 +4056,54 @@ footer {
 
   .home-categories {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .home-categories-section {
+    gap: 32px;
+  }
+
+  .home-categories-set {
+    padding: 12px;
+    gap: 12px;
+    border-radius: 6px;
+  }
+
+  .home-categories-set:nth-child(n + 4) {
+    display: none;
+  }
+
+  .home-categories-set-img {
+    border-radius: 6px;
+    aspect-ratio: 244 / 217;
+  }
+
+  .home-categories-set-text {
+    gap: 6px;
+  }
+
+  .home-categories-set-text h3 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .home-categories-set-text p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .home-categories-button {
+    grid-column: span 1;
+    padding-top: 20px;
+  }
+
+  .home-categories-button .primary-button {
+    height: 40px;
+    padding: 8px 14px;
   }
 
   .home-categories-button .primary-button p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .product-categories {
@@ -4081,9 +4252,10 @@ footer {
     height: 180px;
   }
 
-  .home-gallery-item {
-    flex-basis: 280px;
+  .home-gallery-img {
+    width: 280px;
     height: 180px;
+    flex: 0 0 280px;
   }
 
   .home-gallery-set p {
@@ -4257,6 +4429,28 @@ footer {
 
   .home-capabilities.home-partner {
     padding: 100px 0px;
+  }
+
+  .home-partner-wrapper {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .home-partner-marquee {
+    width: fit-content;
+    min-width: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .home-partner-marquee-group {
+    flex: 0 0 auto;
+    gap: 6px;
+  }
+
+  .home-partner-marquee img {
+    width: 148px;
+    height: 136px;
+    flex: 0 0 148px;
   }
 
   .home-capabilities-container-text {

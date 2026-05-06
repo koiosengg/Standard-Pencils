@@ -7,9 +7,48 @@ import Image4 from "../../assets/Home/Categories/Image 4.png";
 import Image5 from "../../assets/Home/Categories/Image 5.png";
 import Image6 from "../../assets/Home/Categories/Image 6.png";
 
+const categories = [
+  {
+    title: "Classic Kohl/Kajal",
+    description:
+      "Traditional soft kohl pencil with a smooth, blendable formula designed for rich colour payoff and effortless application.",
+    image: Image1,
+  },
+  {
+    title: "Liquid Lipstick",
+    description:
+      "High-performance liquid lipstick designed for long wear, rich pigment payoff, and smooth, even application.",
+    image: Image2,
+  },
+  {
+    title: "Liquid Concealer",
+    description:
+      "High-coverage liquid formula designed for smooth application and effective spot and under-eye correction.",
+    image: Image3,
+  },
+  {
+    title: "Nail Whitener",
+    description:
+      "Hard, precision core pencil designed to enhance, brighten, and define the natural nail tip.",
+    image: Image4,
+  },
+  {
+    title: "Eyebrow Definer",
+    description:
+      "Firm, matte formula for controlled application and natural-looking brow definition.",
+    image: Image5,
+  },
+  {
+    title: "Root Touch Up Stick",
+    description:
+      "Pigmented, easy-glide stick for quick, precise, and natural-looking grey root coverage.",
+    image: Image6,
+  },
+];
+
 function Categories() {
   return (
-    <section className="template">
+    <section className="template home-categories-section">
       <div className="template-heading">
         <h2>
           Our Product
@@ -22,78 +61,20 @@ function Categories() {
         </p>
       </div>
       <div className="home-categories">
-        <article className="home-categories-set">
-          <div className="home-categories-set-img">
-            <img src={Image1} alt="Classic Kohl/Kajal" />
-          </div>
-          <div className="home-categories-set-text">
-            <h3>Classic Kohl/Kajal</h3>
-            <p>
-              Traditional soft kohl pencil with a smooth, blendable formula 
-              designed for rich colour<br/> payoff and effortless application.{" "}
-            </p>
-          </div>
-        </article>
-        <article className="home-categories-set">
-          <div className="home-categories-set-img">
-            <img src={Image2} alt="Liquid Lipstick" />
-          </div>
-          <div className="home-categories-set-text">
-            <h3>Liquid Lipstick</h3>
-            <p>
-              High-performance liquid lipstick designed<br/> for long wear, 
-              rich pigment payoff, and<br/> smooth, even application.{" "}
-            </p>
-          </div>
-        </article>
-        <article className="home-categories-set">
-          <div className="home-categories-set-img">
-            <img src={Image3} alt="Liquid Concealer" />
-          </div>
-          <div className="home-categories-set-text">
-            <h3>Liquid Concealer</h3>
-            <p>
-              High-coverage liquid formula designed for<br/> smooth application 
-              and effective spot and <br/>under-eye correction.{" "}
-            </p>
-          </div>
-        </article>
-        <article className="home-categories-set">
-          <div className="home-categories-set-img">
-            <img src={Image4} alt="Nail Whitener" />
-          </div>
-          <div className="home-categories-set-text">
-            <h3>Nail Whitener</h3>
-            <p>
-              Hard, precision core pencil designed to<br/> enhance, brighten, and define the natural<br/> nail tip.{" "}
-            </p>
-          </div>
-        </article>
-        <article className="home-categories-set">
-          <div className="home-categories-set-img">
-            <img src={Image5} alt="Eyebrow Definer" />
-          </div>
-          <div className="home-categories-set-text">
-            <h3>Eyebrow Definer</h3>
-            <p>
-              Firm, matte formula for controlled<br/> application and natural-looking brow <br/>definition.{" "}
-            </p>
-          </div>
-        </article>
-        <article className="home-categories-set">
-          <div className="home-categories-set-img">
-            <img src={Image6} alt="Root Touch Up Stick" />
-          </div>
-          <div className="home-categories-set-text">
-            <h3>Root Touch Up Stick</h3>
-            <p>
-              Pigmented, easy-glide stick for quick,<br/> precise, and natural-looking grey root <br/>coverage.{" "}
-            </p>
-          </div>
-        </article>
+        {categories.map((category) => (
+          <article className="home-categories-set" key={category.title}>
+            <div className="home-categories-set-img">
+              <img src={category.image} alt={category.title} />
+            </div>
+            <div className="home-categories-set-text">
+              <h3>{category.title}</h3>
+              <p>{category.description}</p>
+            </div>
+          </article>
+        ))}
         <div className="home-categories-button">
-          <Link to="/" className="primary-button">
-            <p>Talk to us</p>
+          <Link to="/product" className="primary-button">
+            <p>View More</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

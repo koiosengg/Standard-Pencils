@@ -101,18 +101,32 @@ function Success() {
         </div>
         <div className="home-success-copy">
           <div className="home-success-heading">
-            <p>Complete Cosmetic</p>
+            <p>
+              <span className="home-success-heading-line">
+                Complete Cosmetic
+              </span>
+            </p>
             <h2>
-              Manufacturing
+              <span className="home-success-heading-line">
+                Manufacturing
+              </span>
               <br />
-              Process <span>Designed for</span>
+              <span className="home-success-heading-line">
+                Process <span className="home-success-heading-accent">Designed for</span>
+              </span>
               <br />
-              <span>Your Brand&rsquo;s Success</span>
+              <span className="home-success-heading-line">
+                <span className="home-success-heading-accent">
+                  Your Brand&rsquo;s Success
+                </span>
+              </span>
             </h2>
           </div>
           <p className="home-success-description">
-            Lorem ipsum dolor sit amet consectetur. Enim erat mattis sed<br/>
-            tincidunt amet rutrum. Sed neque a venenatis sagittis nascetur vel.<br/>
+            Lorem ipsum dolor sit amet consectetur. Enim erat mattis sed
+            <br className="home-success-description-break" />
+            tincidunt amet rutrum. Sed neque a venenatis sagittis nascetur vel.
+            <br className="home-success-description-break" />
             Ut urna elementum id auctor dignissim sit pellentesque purus justo.
           </p>
           <div className="home-success-stats" aria-label="Manufacturing success metrics">
