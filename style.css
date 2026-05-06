@@ -3448,7 +3448,6 @@ html {
 
 .home-testimony-set {
   width: 100%;
-  height: min-content;
   display: flex;
   padding: 64px 16px 16px 16px;
   flex-direction: column;
@@ -3494,6 +3493,7 @@ html {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  gap: 4px;
   width: fit-content;
   animation: partnerMarqueeScroll 16s linear infinite;
   will-change: transform;

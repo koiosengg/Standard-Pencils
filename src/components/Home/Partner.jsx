@@ -67,10 +67,10 @@ function Partner() {
         </Link>
         <div className="home-partner-wrapper">
           <div className="home-partner-marquee">
-            {[0, 1].map((groupIndex) => (
+            {[0, 1, 2, 3].map((groupIndex) => (
               <div
                 className="home-partner-marquee-group"
-                aria-hidden={groupIndex === 1}
+                aria-hidden={groupIndex > 0}
                 key={groupIndex}
               >
                 {partnerImages.map((image, imageIndex) => (
