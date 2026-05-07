@@ -33,8 +33,6 @@ const processSteps = [
       "texture, pigmentation, stability, and",
       "performance — refined through pilot",
       "batches before full production begins.",
-      "Step 4 — Packaging Compatibility ",
-      "Testing",
     ],
   },
   {
