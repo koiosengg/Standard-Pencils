@@ -37,7 +37,7 @@ function Partner() {
              with precision, consistency, and complete reliability. 
           </p>
         </div>
-        <Link to="/">
+        <Link to="/contact">
           Start an enquiry{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"

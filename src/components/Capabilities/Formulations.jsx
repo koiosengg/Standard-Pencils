@@ -142,7 +142,7 @@ function FormulationIcon({ type }) {
 
 function Formulations() {
   return (
-    <section className="formulations">
+    <section className="formulations" id="formulations">
       <div className="formulations-container">
         <div className="formulations-header">
           <span className="formulations-eyebrow">Our</span>

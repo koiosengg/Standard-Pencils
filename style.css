@@ -582,6 +582,7 @@ html {
   width: 100%;
   padding: 36px clamp(24px, 6vw, 160px) 100px;
   background: #efefef;
+  scroll-margin-top: 80px;
 }
 
 .formulations-container {

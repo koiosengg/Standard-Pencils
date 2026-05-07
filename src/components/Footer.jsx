@@ -13,11 +13,11 @@ function Footer() {
           <p>Behind Every Beauty Brand,<br/>From Idea to Iconic.</p>
         </div>
         <nav className="footer-nav">
-          <Link to="/">About</Link>
-          <Link to="/">Capabilities</Link>
-          <Link to="/">Experience </Link>
-          <Link to="/">Contact</Link>
-          <Link to="/">Privacy</Link>
+          <Link to="/about">About</Link>
+          <Link to="/capabilities">Capabilities</Link>
+          <Link to="/experience">Experience </Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/privacy">Privacy</Link>
         </nav>
       </div>
       <div className="footer-bottom">

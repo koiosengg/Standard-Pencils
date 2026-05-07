@@ -42,7 +42,7 @@ function Snapshots() {
               alt="Snapshots Image"
               className="image-zoom-target"
             />
-            <Link className="secondary-button">
+            <Link to="/contact" className="secondary-button">
               <p>Talk to us</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

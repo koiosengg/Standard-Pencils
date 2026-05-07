@@ -1,7 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Capabilities() {
+  const location = useLocation();
+
+  const handleExploreClick = (event) => {
+    if (location.pathname !== "/capabilities") {
+      return;
+    }
+
+    event.preventDefault();
+    document.querySelector("#formulations")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <section className="home-capabilities">
       <div className="home-capabilities-container">
@@ -15,7 +29,7 @@ function Capabilities() {
             that <br className="desktop" /> fits your next product.
           </p>
         </div>
-        <Link to="/">
+        <Link to="/capabilities#formulations" onClick={handleExploreClick}>
           Explore Now{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -62,7 +62,7 @@ function Categories() {
        
        
         <div className="home-categories-button">
-          <Link to="/" className="primary-button">
+          <Link to="/product" className="primary-button">
             <p>View More</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

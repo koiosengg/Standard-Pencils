@@ -47,10 +47,10 @@ function Banner() {
           </div>
 
           <div className="home-banner-buttons">
-            <Link className="secondary-button">
+            <Link to="/contact" className="secondary-button">
               <p>Get your Product Solution</p>
             </Link>
-            <Link className="primary-button">
+            <Link to="/capabilities" className="primary-button">
               <p>Our Capabilities</p>
             </Link>
           </div>
