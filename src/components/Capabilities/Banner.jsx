@@ -48,10 +48,10 @@ function Banner() {
           </div>
 
           <div className="banner-capabilities-buttons">
-            <Link className="secondary-button">
+            <Link to="/contact" className="secondary-button">
               <p>Let’s Start a Project</p>
             </Link>
-            <Link className="primary-button">
+            <Link to="/capabilities" className="primary-button">
               <p>Our Capabilities</p>
             </Link>
           </div>

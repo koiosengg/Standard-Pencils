@@ -59,7 +59,7 @@ function Packaging() {
             </div>
           </div>
         </article>
-        <Link to="/" className="primary-button">
+        <Link to="/capabilities#packaging" className="primary-button">
           <p>View More</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"

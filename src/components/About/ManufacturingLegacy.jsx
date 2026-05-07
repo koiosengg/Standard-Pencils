@@ -1,4 +1,4 @@
-const logo = '/Logo2.png';
+
 
 function ManufacturingLegacy() {
   const mosaicTiles = Array.from({ length: 16 }, (_, index) => index + 1);
@@ -42,11 +42,7 @@ function ManufacturingLegacy() {
       <br />
       Not Shelves
     </h3>
-    <img 
-      src={logo} 
-      alt="Manufacturing Legacy Visual" 
-      className="about-manufacturing-visual-head-logo"
-    />
+   
   </div>
 
   <div className="about-manufacturing-mosaic" aria-hidden="true">

@@ -6,7 +6,7 @@ import Printing from "./Capabilities/Printing";
 import Format from "./Capabilities/Format";
 import Formulations from "./Capabilities/Formulations";
 import Capabilities from "./Home/Capabilities";
-import Packaging from "./Home/Packaging";
+import Packaging from "./Capabilities/Packaging";
 import Manufacturing from "./Home/Manufacturing";
 import Testimony from "./Home/Testimony";
 import Questions from "./Capabilities/Questions";

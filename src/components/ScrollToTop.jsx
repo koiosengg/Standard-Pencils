@@ -6,10 +6,18 @@ function ScrollToTop() {
 
   useEffect(() => {
     if (hash) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
+      });
+
       requestAnimationFrame(() => {
-        document.querySelector(hash)?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
+        requestAnimationFrame(() => {
+          document.querySelector(hash)?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
         });
       });
       return;

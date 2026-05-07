@@ -893,8 +893,8 @@ html {
   flex-direction: column;
   gap: 14px;
   width: 100%;
-  max-width: 660px;
-  margin-left: 132px;
+  max-width: 100%;
+  margin-left: 0;
 }
 
 .questions-item {
@@ -1485,14 +1485,7 @@ html {
   letter-spacing: -0.03em;
 }
 
-.about-manufacturing-visual-head-logo {
-  position: relative;
-  width: 44px;
-  height: 40px;
-  top: -40px;
-  left: 225px;
-  aspect-ratio: 11/10;
-}
+
 
 .about-manufacturing-mosaic {
   display: grid;
@@ -2699,11 +2692,26 @@ html {
   gap: 40px;
 }
 
+.home-packaging-carousel-viewport {
+  width: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.home-packaging-carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
 .home-packaging-set {
   width: 100%;
+  flex: 0 0 100%;
+  height: 372px;
   display: flex;
   padding: 32px;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 48px;
   border-radius: 8px;
   border: 1px solid var(--color-grey-100, #d6d6d6);
@@ -2722,7 +2730,7 @@ html {
 .home-packaging-set-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: all 0.3s;
 }
 
@@ -2731,11 +2739,13 @@ html {
   width: 60%;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: 24px;
 }
 
 .home-packaging-set-text-heading {
   width: 100%;
+  min-height: 82px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2786,11 +2796,16 @@ html {
 
 .home-packaging-set-text-content {
   width: 100%;
+  min-height: 72px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+}
+
+.home-packaging-set-text-content:last-child {
+  min-height: 84px;
 }
 
 .home-packaging-set-text-content h4 {
@@ -2825,6 +2840,55 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.home-packaging-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-packaging-carousel-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--color-grey-100, #d6d6d6);
+  background: var(--color-White-white, #fff);
+  color: var(--color-black-Primary, #111);
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s, background 0.3s;
+}
+
+.home-packaging-carousel-button:hover {
+  border-color: var(--color-Orange-Primary, #f05f30);
+  color: var(--color-Orange-Primary, #f05f30);
+}
+
+.home-packaging-carousel-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.home-packaging-carousel-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.home-packaging-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  background: rgba(240, 95, 48, 0.12);
+}
+
+.home-packaging-carousel-dot.active {
+  background: var(--color-Orange-Primary, #f05f30);
 }
 
 .home-success {
@@ -4283,6 +4347,8 @@ footer {
 
   .home-packaging-set {
     display: flex;
+    height: auto;
+    min-height: 650px;
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -4292,11 +4358,19 @@ footer {
 
   .home-packaging-set-img {
     width: 100%;
+    height: 260px;
+    align-self: auto;
   }
 
   .home-packaging-set-text {
     width: 100%;
     gap: 16px;
+  }
+
+  .home-packaging-set-text-heading,
+  .home-packaging-set-text-content,
+  .home-packaging-set-text-content:last-child {
+    min-height: auto;
   }
 
   .home-packaging-set-text-heading-head span {
@@ -4305,6 +4379,18 @@ footer {
 
   .home-packaging-set-text-heading-head h3 {
     font-size: 20px;
+  }
+
+  .home-packaging-carousel-controls {
+    gap: 14px;
+  }
+
+  .home-packaging-carousel-button {
+    display: none;
+  }
+
+  .home-packaging-carousel-dots {
+    gap: 5px;
   }
 
   .home-fda-container {
