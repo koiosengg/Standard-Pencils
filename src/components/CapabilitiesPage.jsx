@@ -13,10 +13,12 @@ import Questions from "./Capabilities/Questions";
 import Partner from "./Home/Partner";
 import Gallery from "./Home/Gallery";
 import Banner from "./Capabilities/Banner";
+import { CapabilitiesPageStructuredData } from "../structured-data/index.jsx";
 
 function CapabilitiesPage() {
   return (
     <>
+      <CapabilitiesPageStructuredData />
       <Banner />
       <Marquee />
       <Categories />

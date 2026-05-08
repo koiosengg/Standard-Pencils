@@ -15,10 +15,12 @@ import Testimony from "./Home/Testimony";
 import Partner from "./Home/Partner";
 import Gallery from "./Home/Gallery";
 import Questions from "./Capabilities/Questions";
+import { HomePageStructuredData } from "../structured-data/index.jsx";
 
 function Home() {
   return (
     <>
+      <HomePageStructuredData />
       <Banner/>
       <Marquee />
       <Choose />

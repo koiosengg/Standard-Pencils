@@ -8,11 +8,13 @@ import Testimony from "./Home/Testimony";
 import Questions from "./Capabilities/Questions";
 import Banner from "./Capabilities/Banner";
 import Partner from "./Home/Partner";
+import { ProductsPageStructuredData } from "../structured-data/index.jsx";
 
 
 function Product() {
   return (
     <>
+      <ProductsPageStructuredData />
       <Banner />
       <Marquee />
       <Para />

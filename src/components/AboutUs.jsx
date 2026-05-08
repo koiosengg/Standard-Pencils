@@ -11,10 +11,12 @@ import Partner from "./Home/Partner";
 import Gallery from "./Home/Gallery";
 import ManufacturingLegacy from "./About/ManufacturingLegacy";
 import Banner from "./About/Banner";
+import { AboutPageStructuredData } from "../structured-data/index.jsx";
 
 function AboutUs() {
   return (
     <>
+      <AboutPageStructuredData />
       <Banner />
       <Marquee />
       <Choose />
