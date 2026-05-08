@@ -3,34 +3,33 @@ import { Link } from "react-router-dom";
 import Image1 from "../../assets/Home/Snapshots/Image 1.png";
 import Image2 from "../../assets/Home/Snapshots/Image 2.png";
 
-function Snapshots() {
+function Snapshots({ 
+  line1 = "Our Quality",
+  line2 = "Snapshots",
+  description = "Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in vulputate. dolor sit amet consectetur",
+  card1Title = "Lorem Ipsum Dolor Sit",
+  card1Desc = "Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin vulputate. dolor sit amet consectetur",
+  card2Title = "Lorem Ipsum Dolor Sit",
+  card2Desc = "Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin vulputate. dolor sit amet consectetur"
+}) {
   return (
     <section className="home-snapshots">
       <div className="home-snapshots-left">
         <div className="template-heading">
           <h2>
-            Our Quality <br />
-            <span> Snapshots</span> <br />
+            {line1} <br />
+            <span> {line2}</span> <br />
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-            vulputate. dolor sit amet consectetur
-          </p>
+          <p>{description}</p>
         </div>
         <div className="home-snapshots-left-container desktop">
           <article className="home-snapshots-left-set">
-            <h3>Lorem Ipsum Dolor Sit</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin
-              vulputate. dolor sit amet consectetur
-            </p>
+            <h3>{card1Title}</h3>
+            <p>{card1Desc}</p>
           </article>
           <article className="home-snapshots-left-set">
-            <h3>Lorem Ipsum Dolor Sit</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin
-              vulputate. dolor sit amet consectetur
-            </p>
+            <h3>{card2Title}</h3>
+            <p>{card2Desc}</p>
           </article>
         </div>
       </div>
@@ -72,11 +71,8 @@ function Snapshots() {
             </Link>
           </div>
           <article className="home-snapshots-left-set mobile">
-            <h3>Lorem Ipsum Dolor Sit</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin
-              vulputate. dolor sit amet consectetur
-            </p>
+            <h3>{card1Title}</h3>
+            <p>{card1Desc}</p>
           </article>
         </div>
         <div className="home-snapshots-right-set">
@@ -88,11 +84,8 @@ function Snapshots() {
             />
           </div>
           <article className="home-snapshots-left-set mobile">
-            <h3>Lorem Ipsum Dolor Sit</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. At ut tellus quis velin
-              vulputate. dolor sit amet consectetur
-            </p>
+            <h3>{card2Title}</h3>
+            <p>{card2Desc}</p>
           </article>
         </div>
       </div>

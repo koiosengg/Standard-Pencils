@@ -24,16 +24,36 @@ function Home() {
       <Banner/>
       <Marquee />
       <Choose />
-      <Para />
+      <Para
+        line1="Standard Pencil is a story of staying relevant, generation after generation."
+        line2="By honouring our roots while continuously reinventing what beauty manufacturing can become."
+        body="What began as a focused manufacturing vision has grown into a trusted partner for brands navigating an ever-evolving beauty industry. Through continuous innovation, stronger compliance systems, deeper product research, and an uncompromising belief in quality, we continue building products that help brands stay ahead, adapt faster, and create lasting impact in the market."
+      />
       <About />
       <Categories />
       <Capabilities />
-      <Gallery />
+      <Gallery
+        cardDesc="Products That Power Beauty Brands"
+        cardLabel="OEM Manufacturing"
+        titleLine1="Our Manufacturing"
+        titleLine2="Capabilities"
+        description="Combining technical expertise, process control, and product innovation to bring high-performing cosmetic products to market."
+      />
       <Packaging />
-      <Success />
+      <Success
+        description="A structured, quality-first workflow that transforms your product vision into retail-ready formulations, packaging, and finished products with complete confidence."
+      />
       <FDA />
       <Manufacturing />
-      <Snapshots />
+      <Snapshots
+        line1="Your Promise"
+        line2="we deliver"
+        description="Every batch is built on measurable standards, controlled processes, and documentation your brand can confidently stand behind."
+        card1Title="Quality Control at Every Stage"
+        card1Desc="From raw material qualification to final assembly, every production stage undergoes strict checks for consistency, accuracy, safety, and performance."
+        card2Title="Claims, Testing & Compliance Support"
+        card2Desc="From lead-free and dermatologist-tested to region-specific compliance, we develop formulations backed by testing, documentation, and market-ready validation."
+      />
       <Testimony />
       <Questions />
       <Partner />

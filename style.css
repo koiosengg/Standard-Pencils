@@ -3456,7 +3456,8 @@ html {
 .home-snapshots-left-container {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 20px;
   align-self: stretch;
 }

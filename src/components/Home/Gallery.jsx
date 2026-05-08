@@ -4,19 +4,25 @@ import Image2 from "../../assets/Home/Gallery/Image 2.png";
 import Image3 from "../../assets/Home/Gallery/Image 3.png";
 import Arrow from "../../assets/Home/Gallery/Arrow.svg";
 
-const galleryItems = [
-  { type: "text", label: "OEM Manufacturing", desc: "Lorem ipsum dolor sit amet consectetur." },
-  { type: "img", src: Image1 },
-  { type: "img", src: Image2 },
-  { type: "img", src: Image3 },
-  { type: "img", src: Image1 },
-  { type: "img", src: Image2 },
-  { type: "img", src: Image3 },
-];
-
 const GAP = 8;
 
-function Gallery() {
+function Gallery({
+  cardDesc = "Lorem ipsum dolor sit amet consectetur.",
+  cardLabel = "OEM Manufacturing",
+  titleLine1 = "Our Manufacturing",
+  titleLine2 = "Capabilities",
+  description = "Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in vulputate. dolor sit amet consectetur"
+}) {
+  const galleryItems = [
+    { type: "text", label: cardLabel, desc: cardDesc },
+    { type: "img", src: Image1 },
+    { type: "img", src: Image2 },
+    { type: "img", src: Image3 },
+    { type: "img", src: Image1 },
+    { type: "img", src: Image2 },
+    { type: "img", src: Image3 },
+  ];
+
   const containerRef = useRef(null);
   const slideRef = useRef(null);
 
@@ -143,13 +149,10 @@ function Gallery() {
 
       <div className="home-gallery-heading">
         <h2>
-          Our Manufacturing <br />
-          Capabilities
+          {titleLine1} <br />
+          {titleLine2}
         </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-          vulputate. dolor sit amet consectetur
-        </p>
+        <p>{description}</p>
       </div>
     </section>
   );

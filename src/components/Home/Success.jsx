@@ -17,8 +17,8 @@ const processSteps = [
     number: "002",
     title: ["Raw Material", "Qualification"],
     body: [
-      "Every input — pigments, waxes, ",
-      "actives, solvents — is evaluated ",
+      "Every input pigments, waxes, ",
+      "actives, solvents is evaluated ",
       "against cosmetic-grade safety",
       "standards before it enters our",
       "production floor.",
@@ -29,9 +29,9 @@ const processSteps = [
     title: ["In-House R&D &", "Shade Development"],
     body: [
       "Our formulation team develops,",
-      "optimises, and validates the bulk —",
+      "optimises, and validates the bulk",
       "texture, pigmentation, stability, and",
-      "performance — refined through pilot",
+      "performance refined through pilot",
       "batches before full production begins.",
     ],
   },
@@ -40,8 +40,8 @@ const processSteps = [
     title: ["Packaging", "Compatibility Testing"],
     body: [
       "Formulations are tested against",
-      "selected packaging — barrel,",
-      "container, closure — to confirm",
+      "selected packaging barrel,",
+      "container, closure to confirm",
       "compatibility and shelf-life integrity",
       "before scale-up.",
     ],
@@ -61,9 +61,9 @@ const processSteps = [
     number: "006",
     title: ["In-Process Quality", "Checks"],
     body: [
-      "Checks at every production stage — ",
+      "Checks at every production stage ",
       "fill weight, consistency, colour match,",
-      "structural integrity — before the next ",
+      "structural integrity before the next ",
       "stage begins.",
     ],
   },
@@ -90,7 +90,9 @@ const renderLines = (lines) =>
     </span>
   ));
 
-function Success() {
+function Success({
+  description = "Lorem ipsum dolor sit amet consectetur. Enim erat mattis sed tincidunt amet rutrum. Sed neque a venenatis sagittis nascetur vel. Ut urna elementum id auctor dignissim sit pellentesque purus justo."
+}) {
   return (
     <section className="home-success">
       <div className="home-success-hero">
@@ -121,11 +123,7 @@ function Success() {
             </h2>
           </div>
           <p className="home-success-description">
-            Lorem ipsum dolor sit amet consectetur. Enim erat mattis sed
-            <br className="home-success-description-break" />
-            tincidunt amet rutrum. Sed neque a venenatis sagittis nascetur vel.
-            <br className="home-success-description-break" />
-            Ut urna elementum id auctor dignissim sit pellentesque purus justo.
+            {description}
           </p>
           <div className="home-success-stats" aria-label="Manufacturing success metrics">
             <div>

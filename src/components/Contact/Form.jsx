@@ -3,6 +3,10 @@ import React from "react";
 const progressSteps = Array.from({ length: 7 }, (_, index) => index);
 
 function Form() {
+  const handlePhoneInput = (e) => {
+    // Allow only numbers
+    e.target.value = e.target.value.replace(/[^0-9]/g, "");
+  };
   return (
     <section className="contact-form-section">
       <div className="contact-form-shell">
@@ -34,40 +38,94 @@ function Form() {
             </p>
           </div>
 
-          <form className="contact-form-fields">
+          <form
+            className="contact-form-fields"
+            action="https://formspree.io/f/mzdoaolo"
+            method="POST"
+          >
+            {/* Honeypot spam filter - hidden from real users */}
+            <input
+              type="text"
+              name="_gotcha"
+              style={{ display: "none" }}
+              tabIndex="-1"
+              autoComplete="off"
+            />
+
+            {/* Reply-to configuration */}
+            <input type="hidden" name="_replyto" value="email" />
+
             <label className="contact-form-field">
               <span>
                 Brand Name<b>*</b>
               </span>
-              <input type="text" placeholder="Type your answer here" />
+              <input
+                type="text"
+                name="brand_name"
+                placeholder="Type your answer here"
+                required
+                maxLength="100"
+                autoComplete="organization"
+              />
             </label>
 
             <label className="contact-form-field">
               <span>
                 Company Name<b>*</b>
               </span>
-              <input type="text" placeholder="Type your answer here" />
+              <input
+                type="text"
+                name="company_name"
+                placeholder="Type your answer here"
+                required
+                maxLength="100"
+                autoComplete="organization"
+              />
             </label>
 
             <label className="contact-form-field">
               <span>
                 Contact Person<b>*</b>
               </span>
-              <input type="text" placeholder="Type your answer here" />
+              <input
+                type="text"
+                name="contact_person"
+                placeholder="Type your answer here"
+                required
+                maxLength="100"
+                autoComplete="name"
+              />
             </label>
 
             <label className="contact-form-field">
               <span>
                 Email<b>*</b>
               </span>
-              <input type="email" placeholder="Type your answer here" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Type your answer here"
+                required
+                maxLength="254"
+                autoComplete="email"
+              />
             </label>
 
             <label className="contact-form-field">
               <span>
                 Phone / WhatsApp Number<b>*</b>
               </span>
-              <input type="tel" placeholder="Type your answer here" />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Type your answer here"
+                required
+                maxLength="15"
+                autoComplete="tel"
+                pattern="[0-9]+"
+                title="Please enter numbers only"
+                onInput={handlePhoneInput}
+              />
             </label>
 
             <label className="contact-form-field">
@@ -75,7 +133,7 @@ function Form() {
                 Country<b>*</b>
               </span>
               <div className="contact-form-select-wrap">
-                <select defaultValue="">
+                <select name="country" defaultValue="" required>
                   <option value="" disabled>
                     Select
                   </option>
@@ -105,10 +163,16 @@ function Form() {
 
             <label className="contact-form-field">
               <span>Website / Instagram (optional)</span>
-              <input type="text" placeholder="Type your answer here" />
+              <input
+                type="url"
+                name="website_instagram"
+                placeholder="Type your answer here"
+                maxLength="200"
+                autoComplete="url"
+              />
             </label>
 
-            <button type="button" className="contact-form-button">
+            <button type="submit" className="contact-form-button">
               <span>Next</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

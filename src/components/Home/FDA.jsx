@@ -26,7 +26,7 @@ function FDA() {
           </div>
           <p>
             Our manufacturing facility is fully FDA and CDSCO compliant.
-            Whatever performance claims your brand wants to make — we build the
+            Whatever performance claims your brand wants to make we build the
             formulation to back it with documentation.
           </p>
         </div>
