@@ -1998,6 +1998,63 @@ html {
   gap: 20px;
 }
 
+/* Work In Progress */
+
+.wip-container {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px clamp(24px, 6vw, 160px) 80px;
+  background: #fff;
+}
+
+.wip-content {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.wip-content h1 {
+  color: var(--color-black-Primary, #111);
+  font-family: var(--font-family-title, "IBM Plex Sans");
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.wip-content p {
+  color: var(--color-black-300, #4b4b4b);
+  font-family: var(--font-family-body, Inter);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.wip-home-link {
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--color-black-Primary, #111);
+  color: var(--color-White-white, #fff);
+  font-family: var(--font-family-body, Inter);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.wip-home-link:hover {
+  background: #f05f30;
+}
+
 .home-categories-set {
   width: 100%;
   display: flex;
