@@ -11,8 +11,8 @@ function Manufacturing() {
           <br className="desktop" /> Indian and Global Beauty Brands
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. At ut tellus quis vel in
-          vulputate. dolor sit amet consectetur
+          A proven track record of partnering with FMCG, pharma, export-focused,
+           and private label brands, ensuring dependable manufacturing and consistent product performance.
         </p>
       </div>
     </section>

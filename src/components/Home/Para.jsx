@@ -1,8 +1,8 @@
 import React from "react";
 
 function Para({ 
-  line1 = "Standard Pencil is a Lorem ipsum dolor sit amet consectetur. Aliquam diam felis elit malesuada fringilla.",
-  line2 = "Dictum quis commodo cursus volutpat diam mauris quam.",
+  line1 = "Standard Pencil is a story of staying relevant, generation after generation. ",
+  line2 = "By honouring our roots while continuously reinventing what beauty manufacturing can become.",
   body = "Standard Pencil is a Lorem ipsum dolor sit amet consectetur. Aliquam diam felis elit malesuada fringilla. Dictum quis commodo cursus. Lorem ipsum dolor sit amet consectetur."
 }) {
   return (
